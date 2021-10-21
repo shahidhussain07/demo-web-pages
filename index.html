@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTENDENCE FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <legend>ATTENDENCE DETAILS</legend>
+    <div class="container" >
+        <form><ul>
+            <li><label > Candidate's Name  :</label></li>
+            <input type="text" id="full_name" name="full_name"  placeholder="Enter your name"><br>
+            <li><label >Roll No. :</label></li>
+            <input type="number" name="roll_no" id="roll_no" placeholder="Enter a number"><br>
+            <li><label >Subject  :</label></li>
+            <select id="subject">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Pyhsics">Pyhsics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Computer Science">Computer Science</option>
+            </select><br>
+            <li><label>Date  :</label></li>
+            <input type="text" placeholder="dd/mm/yyyy"
+                    onfocus="(this.type='date')"><br>
+            <li><label>Class Timing  :</label></li>
+            start:
+                 <input type="text" placeholder="00:00"
+                    onfocus="(this.type='time')">
+            end:
+                 <input type="text" placeholder="00:00"
+                     onfocus="(this.type='time')">
+            
+            <li><label> Feedback :</label></li>
+            <textarea name="feedback" id="feedback" style="height: 250px; width:300px" placeholder="Write your thoghts about class"></textarea><br>
+            <input type="submit"
+        </ul></form>
+    </div>
+</body>
+</html>
