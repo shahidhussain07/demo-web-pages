@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+    color:rgb(24, 100, 150);
+}
+
 body {
    font-family: cursive;
    background-color: rgba(170, 65, 33, 0.575);
    font-size: 20px;
    color: rgb(72, 151, 187);
    padding: 15px;
-   background-image: url(https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg);
+   background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
    background-repeat: no-repeat;
    background-attachment: fixed;  
    background-size: 100% 100%;
@@ -14,10 +19,7 @@ body {
    justify-content: center;
 }
 
-* {
-    box-sizing: border-box;
-    color:rgb(24, 100, 150);
-}
+
 
 
 legend{
@@ -57,11 +59,7 @@ input[type=text],input[type=number],
 select,
 textarea {
     padding: 10px;
-    /* padding: 20px 20px 12px 10px;  */
-    /* top right bottom left */
     border: 1px solid black;
-    /*border-radius: 10px;
-    /* box-sizing: border-box; */
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -72,7 +70,6 @@ input[type=submit] {
     border-radius: 5px;
     color: rgb(0, 0, 0);
     padding: 5px 5px;
-    /* top-bottom  left-right*/
     cursor: pointer;
     font-size: 10px;
 }
