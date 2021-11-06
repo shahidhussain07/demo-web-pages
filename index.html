@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATTENDENCE FORM</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
@@ -14,28 +15,31 @@
             <li><label > Candidate's Name  :</label></li>
             <input type="text" id="full_name" name="full_name"  placeholder="Enter your name"><br>
             <li><label >Roll No. :</label></li>
-            <input type="number" name="roll_no" id="roll_no" placeholder="Enter a number"><br>
+            <input type="number" min="1" oninput="validity.valid||(value='');" name="roll_no" id="roll_no" placeholder="Enter a number"><br>
             <li><label >Subject  :</label></li>
             <select id="subject">
-                <option value="English">English</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="Pyhsics">Pyhsics</option>
-                <option value="Chemistry">Chemistry</option>
-                <option value="Computer Science">Data structure</option>
+                <option ></option>
+                <option value="C Programming">C Programming</option>
+                <option value="Discrete Mathematics">Discrete Mathematics</option>
+                <option value="Computer Organisation and Architecture">Computer Organisation and Architecture</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Data Structure">Data Structure</option>
+                <option value="Micro Processor">Micro Processor</option>
+                <option value="Operating System">Operating System</option>
+                <option value="Cyber Security System">Cyber Security System</option>
             </select><br>
             <li><label>Date  :</label></li>
-            <input type="text" placeholder="dd/mm/yyyy"
+            <input type="date" placeholder="dd/mm/yyyy"
                     onfocus="(this.type='date')"><br>
             <li><label>Class Timing  :</label></li>
             start:
-                 <input type="text" placeholder="00:00"
+                 <input type="time"
                     onfocus="(this.type='time')"><br>
             end:
-                 <input type="text" placeholder="00:00"
-                     onfocus="(this.type='time')">
+                 <input type="time"  
+                    onfocus="(this.type='time')">
             
-            <li><label> Feedback :</label></li>
+            <li><label>Feedback :</label></li>
         </ul>
             <textarea name="feedback" id="feedback" style="height: 100px; width:300px" placeholder="Write your thoghts about class"></textarea><br>
         
