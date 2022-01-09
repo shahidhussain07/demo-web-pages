@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 3.8rem;
+}
+
+li,button,label,input,p{
+    font-size: 2rem;
+}
+h2{
+    font-size: 3.8rem;
+}
+h3{
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+h4,h5 {
+    font-size: 2.8rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: 2rem 4rem;
+    background: #4d3ce6ea;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    background: #092444;
+    font-size: 2.2rem;
+}
+
+
+/* Nav section with hero */
+.main-head{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul { 
+    display: flex;
+    flex : 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo {
+    flex : 5 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 350;
+}
+
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(83, 83, 83, 0.5), transparent),
+       url(./img/landing-page.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3{
+    padding: 4.1rem;
+}
+
+/* locations section*/
+
+#locations {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719), transparent),
+        url(./img/new-york.jpg);
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.locations-head {
+    width: 90%;
+    margin: auto;
+}
+
+.locations-head h2{
+    top: 10%;
+    padding: 2rem 0rem;
+    text-decoration: underline;
+}
+.locations-head h3{
+    padding: 1rem 0rem;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20%;
+
+}
+.moving-cloud-1{
+    right: 2%;
+    opacity: .5;
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+}    
+.moving-cloud-2{ 
+    top: 8%;
+    right: 10%;
+    opacity: .5;  
+    animation: cloudAnimation 3s infinite alternate ease-in-out; 
+} 
+
+@keyframes cloudAnimation {
+    from{
+        transform: translate(15%, -10%);
+    }
+    to{
+        transform: translate(0%, 0%);
+    }
+}
+
+
+/* Benefits Head*/
+
+.benefits-head {
+    background: #343c46;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.benefits-head h3{
+    padding: 1rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: #343c46;
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 45vh;
+    margin: 2rem 2rem;
+    color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0,0,0,.1);
+}
+.cards img{
+    width: 20%;
+    margin: 1rem;
+    background: white;
+}
+.card h4,p{
+    padding: 2rem ;
+}
+
+.card-icon{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(14, 13, 13, 0.753);
+}
+
+
+/* Contact section*/
+
+#contact {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(58, 57, 57, 0.774), transparent),
+      url(/img/mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-wrapper{
+    background: #343a41e7;
+    width:35%;
+    color: white;
+    border-radius: 15px;
+}
+
+.form-head{
+    text-align: center;
+    padding: 3rem;
+}
+
+.name-form,
+.email-form{
+    text-align: center;
+    padding: 3rem;
+}
+
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.form-wrapper input{
+    padding: 1rem 2rem;
+}
+
+footer {
+    padding: 40px 0;
+    color: white;
+    background: #343c46;
+}
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+.footer-wrapper img{
+    height:120%;
+    width: 20%;
+}
+footer h5{
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper ul {
+    display: flex;
+    flex : 1 1 20rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.footer-wrapper li{
+    margin: 0;
+}
+
+
+
+/* Media Query*/
+@media screen and (max-width: 950px) {
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 725px) {
+    footer {
+        text-align: center;
+    }
+    footer h{
+        padding-bottom: 5rem;
+    }
+    .form-wrapper{
+        width: 90%;
+    }
+}
