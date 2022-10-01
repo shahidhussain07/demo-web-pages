@@ -4,14 +4,14 @@
 }
 
 body {
-   font-family: cursive;
+   font-family: "Poppins", sans-serif;
    background-color: rgba(170, 65, 33, 0.575);
    font-size: 20px;
    color: rgb(72, 151, 187);
    padding: 15px;
    border: 5px solid ;
    border-color: black;
-   background-image: url(https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg);
+   /* background-image: url(); */
    background-repeat: no-repeat;
    background-attachment: fixed;  
    background-size: 100% 100%;
@@ -21,15 +21,16 @@ body {
    justify-content: center;
 }
 
-
-
-
-legend{
+legend {
+    border-bottom: 2px dashed #282928;
+    margin-bottom: 18px;
+}
+/* legend{
     background-color: rgb(3, 138, 15);
     color: white;
     padding: 10px 30px;
     font-size: x-large;
-}
+} */
 input,select {
     background-color:rgb(247, 248, 246);
     border-radius: 6px;
@@ -56,16 +57,23 @@ input:focus {
     text-align: center;
     color: rgb(22, 22, 22)
 }
-
-input[type=text],input[type=number],
+.container {
+    display: flex;
+    flex-direction: column;
+}
+input,
 select,
 textarea {
-    padding: 10px;
+    padding: 8px;
     border: 1px solid black;
-    margin-top: 5px;
+    margin:8px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
+span {
+    font-size: 14px;
+}
 
 input[type=submit] {
     background-color: rgb(245, 245, 245);
