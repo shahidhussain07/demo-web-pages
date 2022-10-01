@@ -6,45 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATTENDENCE FORM</title>
     <link rel="icon" href="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg">
+    <link  href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
     <legend>ATTENDENCE DETAILS</legend>
     <div class="container" >
-        <form><ul>
-            <li><label > Candidate's Name  :</label></li>
-            <input type="text" id="full_name" name="full_name"  placeholder="Enter your name"><br>
-            <li><label >Roll No. :</label></li>
-            <input type="number" min="1" oninput="validity.valid||(value='');" name="roll_no" id="roll_no" placeholder="Enter a number"><br>
-            <li><label >Subject  :</label></li>
-            <select id="subject">
-                <option ></option>
-                <option value="C Programming">C Programming</option>
-                <option value="Discrete Mathematics">Discrete Mathematics</option>
-                <option value="Computer Organisation and Architecture">Computer Organisation and Architecture</option>
-                <option value="Python Programming">Python Programming</option>
-                <option value="Data Structure">Data Structure</option>
-                <option value="Micro Processor">Micro Processor</option>
-                <option value="Operating System">Operating System</option>
-                <option value="Cyber Security System">Cyber Security System</option>
-            </select><br>
-            <li><label>Date  :</label></li>
-            <input type="date" placeholder="dd/mm/yyyy"
-                    onfocus="(this.type='date')"><br>
-            <li><label>Class Timing  :</label></li>
-            start:
-                 <input type="time"
-                    onfocus="(this.type='time')"><br>
-            end:
-                 <input type="time"  
-                    onfocus="(this.type='time')">
-            
-            <li><label>Feedback :</label></li>
-        </ul>
-            <textarea name="feedback" id="feedback" style="height: 100px; width:300px" placeholder="Write your thoghts about class"></textarea><br>
+        <label for="Date">Date :</label>
+        <input type="date" name="date" > <br>
         
-            <input type="submit" class="sub" ></ul>
-       </form>
+        <label for="Name">Name :</label>
+        <input type="text" name="fname" > <br>
+
+        <label for="">Roll No :</label>
+        <input type="number" name="fname" > <br>
+
+        <label for="branch">Branch :</label>
+        <select>
+            <option>CSE</option>
+            <option>EN</option>
+            <option>CIVIL</option>
+            <option>MECHENICAL</option>
+        </select>
+        <br>
+        <label for="present">Present :</label>
+        <div>
+        <input type="radio" name="present" id=""><span>Present</span>
+        <input type="radio" name="present" id="">
+        <span>Absent</span>
+            </div>
+            <br>
+        <input type="submit" value="Submit Attendance">
     </div>
 </body>
 </html>
