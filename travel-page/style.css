@@ -43,7 +43,7 @@ button{
 }
 button:hover{
     background: #092444;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 
@@ -273,7 +273,7 @@ footer h5{
 
 .footer-wrapper ul {
     display: flex;
-    flex : 1 1 20rem;
+    flex : 1 1 1rem;
     justify-content: space-around;
     align-items: center;
     list-style: none;
